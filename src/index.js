@@ -3,11 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ThemeContext} from "./theme/theme_context";
+import {themes} from "./theme/theme_context";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+      <ThemeContext.Provider value={themes.light}>
+        <App/>
+      </ThemeContext.Provider>
   </React.StrictMode>
 );
 
