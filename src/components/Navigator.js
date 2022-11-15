@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 
 export function Navigator(){
-    const steps = ["Overview", "Problem", "Causes", "Solution", "Evidence", "Policy"]
+    const steps = ["Overview", "Problem", "Causes", "Solution", "Evidence", "Policy", "References"]
     const [activeStep, setActiveStep] = useState(0);
     const theme = useContext(ThemeContext);
     const step_theme = createTheme({

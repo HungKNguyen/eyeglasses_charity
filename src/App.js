@@ -8,6 +8,7 @@ import {Description} from "./components/Description";
 import {Overview} from "./components/Overview";
 import {Problem} from "./components/Problem";
 import {Cause} from "./components/Cause";
+import {Solution} from "./components/Solution";
 
 function App() {
     const theme = useContext(ThemeContext);
@@ -24,9 +25,11 @@ function App() {
                         <Overview/>
                         <Problem/>
                         <Cause/>
-                        {/*<Solution/>*/}
+                        <Solution/>
                         {/*<Evidence/>*/}
                         {/*<Policy/>*/}
+                        {/*<Reference/>*/}
+                        <div/>
                     </Stack>
                 </Grid>
             </Grid>

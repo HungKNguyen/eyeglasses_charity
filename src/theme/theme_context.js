@@ -12,6 +12,7 @@ export const themes = {
         background_highlight: '#e1e1e1',
         text_light: '#ffffff',
         text_dark: '#000000',
+        text_gray: '#616161'
     }
 };
 
