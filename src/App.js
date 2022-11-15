@@ -7,6 +7,7 @@ import {Navigator} from "./components/Navigator";
 import {Description} from "./components/Description";
 import {Overview} from "./components/Overview";
 import {Problem} from "./components/Problem";
+import {Cause} from "./components/Cause";
 
 function App() {
     const theme = useContext(ThemeContext);
@@ -22,8 +23,7 @@ function App() {
                         <Description/>
                         <Overview/>
                         <Problem/>
-                        <div/>
-                        {/*<Cause/>*/}
+                        <Cause/>
                         {/*<Solution/>*/}
                         {/*<Evidence/>*/}
                         {/*<Policy/>*/}
