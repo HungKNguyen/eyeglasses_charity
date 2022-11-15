@@ -11,7 +11,7 @@ export function TabBar(props) {
             <AppBar>
                 <Toolbar>
                     <Typography variant="h4" component="div" sx={{ flexGrow: 1 }}>
-                        {props.title}
+                        "Researching Cost-effectiveness of Eyeglasses Distribution Charity"
                     </Typography>
                 </Toolbar>
             </AppBar>
