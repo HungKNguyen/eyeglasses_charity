@@ -41,11 +41,10 @@ export function Solution() {
         "Placeholder5",
     ]
     const sightSavers = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5",
+        <span>Sightsavers works in 30 countries globally, focusing on Africa and Asia</span>,
+        <span>They treat multiple eye conditions, including cataracts and refractive error(which include presbyopia)</span>,
+        <span>They treat other neglected tropical diseases such as intestinal worms and lymphatic filariasis</span>,
+        <span>They also campaign for disability rights</span>
     ]
     return (
         <Stack spacing={2}>
