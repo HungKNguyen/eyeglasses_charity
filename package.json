@@ -2,6 +2,7 @@
   "name": "eyeglasses_charity",
   "version": "0.2.0",
   "private": true,
+  "homepage": "https://hungknguyen.github.io/eyeglasses_charity/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
