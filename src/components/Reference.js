@@ -48,6 +48,8 @@ export function Reference() {
             src:"https://www.thelancet.com/action/showPdf?pii=S2214-109X%2818%2930329-2"},
         {title: "Visionspring website",
             src:"https://visionspring.org/"},
+        {title: "Better Vision for the Poor",
+            src:"https://ssir.org/articles/entry/better_vision_for_the_poor"},
         {title: "Sightsavers website",
             src:"https://www.sightsavers.org/"},
         {title: "GiveWell: Distribution of Eyeglasses in Developing Countries",
