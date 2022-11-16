@@ -25,12 +25,19 @@ function App() {
                 <Grid item xs={9}>
                     <Stack spacing={5}>
                         <Description/>
+                        <div id="Overview"/>
                         <Overview/>
+                        <div id="Problem"/>
                         <Problem/>
+                        <div id="Causes"/>
                         <Cause/>
+                        <div id="Solutions"/>
                         <Solution/>
+                        <div id="Evidence"/>
                         <Evidence/>
+                        <div id="Policies"/>
                         <Policy/>
+                        <div id="References"/>
                         <Reference/>
                         <div style={{height: 100}}/>
                     </Stack>
