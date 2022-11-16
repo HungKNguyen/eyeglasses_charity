@@ -1,4 +1,4 @@
-import {Container, createTheme, List, ListItem, Stack, ThemeProvider, Typography} from "@mui/material";
+import {Box, createTheme, List, ListItem, Stack, ThemeProvider, Typography} from "@mui/material";
 import {useContext} from "react";
 import {ThemeContext} from "../theme/theme_context";
 
@@ -35,7 +35,7 @@ export function Overview() {
                 <Typography variant="h4">
                     Overview
                 </Typography>
-                <Container style={{
+                <Box style={{
                     padding: "2vh 2vw",
                     backgroundColor: theme.background_highlight,
                     color: theme.primary_dark,
@@ -48,7 +48,7 @@ export function Overview() {
                             </ListItem>
                         ))}
                     </List>
-                </Container>
+                </Box>
             </Stack>
         </ThemeProvider>
     )

@@ -2,7 +2,7 @@ import {GeoJSON, MapContainer, TileLayer} from "react-leaflet";
 import geoJson from "../resources/geojsonV2.json";
 import {Component, useContext, useRef, useState} from "react";
 import {ThemeContext} from "../theme/theme_context";
-import {Stack, ToggleButton, ToggleButtonGroup} from "@mui/material";
+import {Stack, ToggleButton, ToggleButtonGroup, Typography} from "@mui/material";
 import "leaflet/dist/leaflet.css"
 
 const POSITION_CLASSES = {
@@ -29,8 +29,8 @@ const global_data = {
 }
 
 class InfoControl extends Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {properties: global_data}
         this.info_style = {
             padding: "6px 8px",
@@ -112,7 +112,7 @@ function LegendControl({position, metric}) {
             <div style={legend_style} className="leaflet-control">
                 <h4 style={legend_h4_style}>Legend</h4>
                 {colors.map((color, index) => (
-                    <div><i style={{...legend_i_style, background: color}}/> {labels[index]} <br/></div>
+                    <div key={color}><i style={{...legend_i_style, background: color}}/> {labels[index]} <br/></div>
 
                 ))}
             </div>
@@ -225,6 +225,10 @@ export function Map(props) {
                 <ToggleButton value={Metric.NoUnmetPBO}>Uncorrected Presbyopia Cases (Thousands)</ToggleButton>
                 <ToggleButton value={Metric.UnmetPBOPercentage}>Proportion of Uncorrected Presbyopia (%)</ToggleButton>
             </ToggleButtonGroup>
+            <Typography variant="caption">
+                This map adapted data from <em>Global Prevalence of Presbyopia and Vision Impairment from
+                Uncorrected Presbyopia: Systematic Review, Meta-analysis, and Modelling (Fricke et al, 2018)</em>
+            </Typography>
         </Stack>
     )
 }

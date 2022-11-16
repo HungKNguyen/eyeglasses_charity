@@ -9,6 +9,7 @@ import {Overview} from "./components/Overview";
 import {Problem} from "./components/Problem";
 import {Cause} from "./components/Cause";
 import {Solution} from "./components/Solution";
+import {Evidence} from "./components/Evidence";
 
 function App() {
     const theme = useContext(ThemeContext);
@@ -20,16 +21,16 @@ function App() {
                     <Navigator/>
                 </Grid>
                 <Grid item xs={9}>
-                    <Stack spacing={4}>
+                    <Stack spacing={5}>
                         <Description/>
                         <Overview/>
                         <Problem/>
                         <Cause/>
                         <Solution/>
-                        {/*<Evidence/>*/}
+                        <Evidence/>
                         {/*<Policy/>*/}
                         {/*<Reference/>*/}
-                        <div/>
+                        <div style={{height: 100}}/>
                     </Stack>
                 </Grid>
             </Grid>
