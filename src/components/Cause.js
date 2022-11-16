@@ -23,11 +23,10 @@ export function Cause() {
         }
     })
     const causes = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5",
+        <span>The Market lacks sufficiently trained ophthalmic support personnel such as assistants and technicians in developing countries</span>,
+        <span>Governments are partially responsible from the lack of willingness and funding to provide primary eye care services in rural areas</span>,
+        <span>The Market fails to deliver glasses to rural areas at a good cost since the total indirect cost of acquiring eyeglasses is significantly more than eyeglasses themselves</span>,
+        <span>Poor people lack knowledge and has cultural biases about eyeglasses and does not know that affordable products exist to help their vision</span>,
     ]
     return (
         <ThemeProvider theme={list_theme}>
