@@ -25,19 +25,20 @@ export function Problem() {
         }
     })
     const description_list = [
-        <span>Also known as farsightedness</span>,
         <span><b>Goertz et al. (2014)</b> defines presbyopia as an age-related visual impairment that results from the
             &nbsp;gradual decrease in accommodation expected with age which can affect quality of life</span>,
+        <span>Major risk of presbyopia is age however, disease, trauma and medications can affect as well</span>,
+        <span>Current treatments includes optical or surgical refractive modification</span>
     ]
     const magnitude_list = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
+        <span>The number of affected people globally is 1.8 billion and 826 million people has yet to be treated</span>,
+        <span>Ownership of glasses to cure presbyopia in low-income and middle-income countries is 10%</span>,
+        <span>WHO states that the number of people with unaddressed near vision impairment is greater than 80% in western, eastern and central sub-Saharan Africa</span>,
     ]
     const effect_list = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
+        <span>Presbyopia causes an estimated US $25 billion in global productivity loss</span>,
+        <span>Near vision impairment affects the quality of life (QoL) among adults</span>,
+        <span>The economic loss of uncorrected myopia in East Asia, South Asia and South-East Asia were equivalent to more than 1% of GDP</span>,
     ]
 
     return (

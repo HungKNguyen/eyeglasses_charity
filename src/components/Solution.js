@@ -34,11 +34,10 @@ export function Solution() {
         }
     })
     const visionSpring = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5",
+        <span>Dedicates to reduce poverty through the sale of affordable corrective glasses</span>,
+        <span>Distributed to 24 countries</span>,
+        <span>Partners with ten organizations, NGO’s and institutions to make the first refractive error free district in Bangladesh</span>,
+        <span>Distributed to 8.7 million people and made a total of $1.8 billion in economic impact</span>,
     ]
     const sightSavers = [
         <span>Sightsavers works in 30 countries globally, focusing on Africa and Asia</span>,
