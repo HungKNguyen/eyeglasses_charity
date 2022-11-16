@@ -25,9 +25,9 @@ export function Problem() {
         }
     })
     const description_list = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
+        <span>Also known as farsightedness</span>,
+        <span><b>Goertz et al. (2014)</b> defines presbyopia as an age-related visual impairment that results from the
+            &nbsp;gradual decrease in accommodation expected with age which can affect quality of life</span>,
     ]
     const magnitude_list = [
         "Placeholder1",
