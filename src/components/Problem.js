@@ -46,13 +46,12 @@ export function Problem() {
                 <Typography variant="h4">
                     Problem
                 </Typography>
-                <Stack direction="row" spacing={2}>
+                <Stack direction="row" spacing={2} alignItems="stretch">
                     <Container style={{
                         padding: "2vh 2vw",
                         borderRadius: "10px",
                         border: "3px solid",
-                        borderColor: theme.primary,
-                        height: "100%"
+                        borderColor: theme.primary
                     }}>
                         <Typography variant="h6">
                             Description
@@ -69,8 +68,7 @@ export function Problem() {
                         padding: "2vh 2vw",
                         borderRadius: "10px",
                         border: "3px solid",
-                        borderColor: theme.secondary,
-                        height: "100%"
+                        borderColor: theme.secondary
                     }}>
                         <Typography variant="h6">
                             Magnitude
@@ -87,8 +85,7 @@ export function Problem() {
                         padding: "2vh 2vw",
                         borderRadius: "10px",
                         border: "3px solid",
-                        borderColor: theme.primary,
-                        height: "100%"
+                        borderColor: theme.primary
                     }}>
                         <Typography variant="h6">
                             Effect
