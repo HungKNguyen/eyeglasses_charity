@@ -10,6 +10,8 @@ import {Problem} from "./components/Problem";
 import {Cause} from "./components/Cause";
 import {Solution} from "./components/Solution";
 import {Evidence} from "./components/Evidence";
+import {Policy} from "./components/Policy";
+import {Reference} from "./components/Reference";
 
 function App() {
     const theme = useContext(ThemeContext);
@@ -28,8 +30,8 @@ function App() {
                         <Cause/>
                         <Solution/>
                         <Evidence/>
-                        {/*<Policy/>*/}
-                        {/*<Reference/>*/}
+                        <Policy/>
+                        <Reference/>
                         <div style={{height: 100}}/>
                     </Stack>
                 </Grid>
