@@ -38,9 +38,28 @@ export function Reference() {
     }));
 
     const rows = [
-        {title: "Title1", src:"#"},
-        {title: "Title2", src:"#"},
-        {title: "Title3", src:"#"},
+        {title: "Fricke et al. 2018",
+            src:"https://www.sciencedirect.com/science/article/pii/S0161642017337971?via%3Dihub"},
+        {title: "Glewwe and Schaffner, 2014",
+            src:"https://www.semanticscholar.org/paper/The-Impact-of-the-Provision-of-Near-Vision-Glasses-Glewwe/829837ada46fa994fca9dbe490e2266e052a6b45?p2df"},
+        {title: "Goertz et al. 2014",
+            src:"https://pubmed.ncbi.nlm.nih.gov/24910300/"},
+        {title: "Reddy et al. 2018",
+            src:"https://www.thelancet.com/action/showPdf?pii=S2214-109X%2818%2930329-2"},
+        {title: "Visionspring website",
+            src:"https://visionspring.org/"},
+        {title: "Sightsavers website",
+            src:"https://www.sightsavers.org/"},
+        {title: "GiveWell: Distribution of Eyeglasses in Developing Countries",
+            src:"https://www.givewell.org/international/technical/programs/eyeglasses#How_cost-effective_is_the_program"},
+        {title: "GiveWell: Eyeglasses to Improve Workers' Manual Dexterity",
+            src:"https://www.givewell.org/international/technical/programs/eyeglasses-workers-manual-dexterity#How_cost-effective_is_the_program"},
+        {title: "GiveWell: Cost Effectiveness Model",
+            src:"https://docs.google.com/spreadsheets/d/1Fvh9pKEOZk5cWspKsCaqppEGw1zMIAU8ntOLwlT5YuQ/edit#gid=0"},
+        {title: "WHO: Blindness and vision impairment - Fact Sheet",
+            src:"https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment"},
+        {title: "WHO: World Report on Vision",
+            src:"https://www.who.int/publications/i/item/9789241516570"},
     ];
 
     return (
