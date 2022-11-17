@@ -23,11 +23,18 @@ export function Overview() {
         }
     })
     const overviews = [
-        "Placeholder1",
-        "Placeholder2",
-        "Placeholder3",
-        "Placeholder4",
-        "Placeholder5",
+        <span>Presbyopia is a near vision impairment from increasing in age. Globally, there is 1.8 billion people
+            &nbsp;affected and 826 million people has yet to be addressed. This causes an estimated US $25 billion in global
+            &nbsp;productivity loss</span>,
+        <span>The market has a lack of proficient ophthalmic support personnel especially in developing countries as
+            &nbsp;some governments fail to provide the appropriate eye care services and funding. The market fails to
+            &nbsp;provide glasses at affordable price points due to high transportation costs and people in poverty both
+            &nbsp;lack knowledge of proper eye care and hold bias against seeking it</span>,
+        <span>Evidence from research show that distributing corrective glasses can produce a 20% productivity increase
+            &nbsp;while remain low-cost, thus making it a cost-effective charitable program (8x time as effective as
+            &nbsp;GiveDirectly)</span>,
+        <span>We recommend donating to Visionspring, given their strong emphasis in cost-effectiveness, focus on
+            &nbsp;distributing corrective glasses, and potential to utilize further funding</span>,
     ]
     return (
         <ThemeProvider theme={list_theme}>
