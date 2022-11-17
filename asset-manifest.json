@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/eyeglasses_charity/static/css/main.fbba8e61.css",
-    "main.js": "/eyeglasses_charity/static/js/main.b5cbd643.js",
+    "main.js": "/eyeglasses_charity/static/js/main.25b43bf9.js",
     "static/js/787.a8d6220e.chunk.js": "/eyeglasses_charity/static/js/787.a8d6220e.chunk.js",
     "index.html": "/eyeglasses_charity/index.html",
     "main.fbba8e61.css.map": "/eyeglasses_charity/static/css/main.fbba8e61.css.map",
-    "main.b5cbd643.js.map": "/eyeglasses_charity/static/js/main.b5cbd643.js.map",
+    "main.25b43bf9.js.map": "/eyeglasses_charity/static/js/main.25b43bf9.js.map",
     "787.a8d6220e.chunk.js.map": "/eyeglasses_charity/static/js/787.a8d6220e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fbba8e61.css",
-    "static/js/main.b5cbd643.js"
+    "static/js/main.25b43bf9.js"
   ]
 }
