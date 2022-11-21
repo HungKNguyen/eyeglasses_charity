@@ -37,8 +37,7 @@ export function Problem() {
     ]
     const effect_list = [
         <span>Presbyopia causes an estimated US $25 billion in global productivity loss</span>,
-        <span>Near vision impairment affects the quality of life (QoL) among adults</span>,
-        <span>The economic loss of uncorrected myopia in East Asia, South Asia and South-East Asia were equivalent to more than 1% of GDP</span>,
+        <span>Presbyopic patients report up to 22% decrease in quality-of-life (QoL) score, and up to 80% patients with uncorrected presbyopia report difficulty in performing near-vision related tasks</span>,
     ]
 
     return (

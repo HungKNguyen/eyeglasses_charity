@@ -1,6 +1,6 @@
 import {GeoJSON, MapContainer, TileLayer} from "react-leaflet";
 import geoJson from "../resources/geojsonV2.json";
-import {Component, useContext, useRef, useState} from "react";
+import {Component, useContext, useEffect, useRef, useState} from "react";
 import {ThemeContext} from "../theme/theme_context";
 import {Stack, ToggleButton, ToggleButtonGroup, Typography} from "@mui/material";
 import "leaflet/dist/leaflet.css"
@@ -87,33 +87,37 @@ function LegendControl({position, metric}) {
         margin: "0 0 5px",
         color: "#777",
     }
-    let colors = [];
-    let labels = []
-    switch (metric) {
-        case Metric.NoPBO:
-            colors = ['#800026', '#FC4E2A', '#FEB24C', '#FED976']
-            labels = [">= 100,000", ">= 20,000", ">= 10,000", "< 10,000"]
-            break
-        case Metric.NoUnmetPBO:
-            colors = ['#800026', '#E31A1C', '#FED976', '#FFEDA0']
-            labels = [">= 100,000", ">= 10,000", ">= 5,000", "< 5,000"]
-            break
-        case Metric.PrevalencePBO:
-            colors = ['#FD8D3C', '#FEB24C', '#FEB24C']
-            labels = [">= 30%", ">= 20%", "< 20%"]
-            break
-        case Metric.UnmetPBOPercentage:
-            colors = ['#800026', '#E31A1C', '#FED976', '#FFEDA0']
-            labels = [">= 66.66%", ">= 33.33%", ">= 5%", "< 5%"]
-            break
-    }
+
+    const [colors, setColors] = useState([])
+    const [labels, setLabels] = useState([])
+
+    useEffect(() => {
+        switch (metric) {
+            case Metric.NoPBO:
+                setColors(['#800026', '#FC4E2A', '#FEB24C', '#FED976'])
+                setLabels([">= 100,000", ">= 20,000", ">= 10,000", "< 10,000"])
+                break
+            case Metric.NoUnmetPBO:
+                setColors(['#800026', '#E31A1C', '#FED976', '#FFEDA0'])
+                setLabels([">= 100,000", ">= 10,000", ">= 5,000", "< 5,000"])
+                break
+            case Metric.PrevalencePBO:
+                setColors(['#FD8D3C', '#FEB24C', '#FEB24C'])
+                setLabels([">= 30%", ">= 20%", "< 20%"])
+                break
+            case Metric.UnmetPBOPercentage:
+                setColors(['#800026', '#E31A1C', '#FED976', '#FFEDA0'])
+                setLabels([">= 66.66%", ">= 33.33%", ">= 5%", "< 5%"])
+                break
+        }
+    }, [metric])
+
     return (
         <div className={POSITION_CLASSES[position]}>
             <div style={legend_style} className="leaflet-control">
                 <h4 style={legend_h4_style}>Legend</h4>
                 {colors.map((color, index) => (
-                    <div key={color}><i style={{...legend_i_style, background: color}}/> {labels[index]} <br/></div>
-
+                    <div key={metric + index}><i style={{...legend_i_style, background: color}}/> {labels[index]} <br/></div>
                 ))}
             </div>
         </div>
