@@ -39,7 +39,7 @@ export function Evidence() {
         &nbsp;percentage of good quality products, and average value created per minute.</span>,
         <span>However, due to a limited sample size (N=239) and research design issues that leads to lack of motivation from
         &nbsp;participant, <b>Glewwe and Schaffner (2014)</b> was only able to show a productivity difference between presbyopic women
-        &nbsp;without glasses and non-presbyopic women (40% lower).</span>,
+        &nbsp;without glasses and non-presbyopic women (26% lower).</span>,
         <span><b>Reddy et al. (2018)</b> focuses on tea picker aged 40 years or older in India with uncorrected presbyopia.
         &nbsp;They measured productivity increase by the weight of tea picked</span>,
         <span>The study managed to find strong evidence for an increase in productivity by providing correction glasses.
