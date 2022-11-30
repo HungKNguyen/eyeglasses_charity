@@ -41,7 +41,7 @@ export function Problem() {
     ]
 
     return (
-        <>
+        <Stack spacing={3}>
             <ThemeProvider theme={list_theme}>
                 <Typography variant="h4">
                     Problem
@@ -101,7 +101,7 @@ export function Problem() {
                 </Stack>
                 <Map/>
             </ThemeProvider>
-        </>
+        </Stack>
     )
 
 }

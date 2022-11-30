@@ -9,9 +9,8 @@ import {
     ThemeProvider
 } from "@mui/material";
 
-export function Navigator(){
+export function Navigator({activeStep, setActiveStep}){
     const steps = ["Overview", "Problem", "Causes", "Solutions", "Evidence", "Policies", "References"]
-    const [activeStep, setActiveStep] = useState(0);
     const theme = useContext(ThemeContext);
     const step_theme = createTheme({
         components: {
@@ -19,6 +18,9 @@ export function Navigator(){
                 styleOverrides: {
                     root: {
                         "&.Mui-active": {
+                            color: theme.secondary
+                        },
+                        "&.Mui-completed": {
                             color: theme.secondary
                         }
                     }
@@ -36,12 +38,12 @@ export function Navigator(){
     return (
         <Container style={{position : "fixed", bottom: "5vh"}}>
             <ThemeProvider theme={step_theme}>
-                <Stepper activeStep={activeStep} nonLinear orientation="vertical">
+                <Stepper activeStep={activeStep} orientation="vertical">
                     {steps.map((step, index) => (
                         <Step key={step} onClick={() => setActiveStep(index)}>
-                            <StepLabel>
-                                <Link href={`#${step}`} underline="none" color="inherit">{step}</Link>
-                            </StepLabel>
+                            <Link href={`#${step}`} underline="none" color="inherit">
+                                <StepLabel>{step}</StepLabel>
+                            </Link>
                         </Step>
                     ))}
                 </Stepper>
@@ -49,4 +51,9 @@ export function Navigator(){
         </Container>
 
     )
+}
+
+Navigator.defaultProps = {
+    activeStep: 0,
+    setActiveStep: () => {}
 }

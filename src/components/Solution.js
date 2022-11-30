@@ -46,7 +46,7 @@ export function Solution() {
         <span>They also campaign for disability rights</span>
     ]
     return (
-        <Stack spacing={2}>
+        <Stack spacing={3}>
             <Typography variant="h4">
                 Solutions
             </Typography>

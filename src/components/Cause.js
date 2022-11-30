@@ -30,7 +30,7 @@ export function Cause() {
     ]
     return (
         <ThemeProvider theme={list_theme}>
-            <Stack spacing={2}>
+            <Stack spacing={3}>
                 <Typography variant="h4">
                     Causes
                 </Typography>

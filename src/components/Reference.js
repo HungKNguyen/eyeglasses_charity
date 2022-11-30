@@ -65,7 +65,7 @@ export function Reference() {
     ];
 
     return (
-        <Stack spacing={2}>
+        <Stack spacing={3}>
             <Typography variant="h4">
                 References
             </Typography>
