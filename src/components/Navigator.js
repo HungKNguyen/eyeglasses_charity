@@ -1,4 +1,4 @@
-import {useContext, useState} from "react";
+import {useContext} from "react";
 import {ThemeContext} from "../theme/theme_context";
 import {
     Container,
@@ -9,7 +9,7 @@ import {
     ThemeProvider
 } from "@mui/material";
 
-export function Navigator({activeStep, setActiveStep}){
+export function Navigator({activeStep}){
     const steps = ["Overview", "Problem", "Causes", "Solutions", "Evidence", "Policies", "References"]
     const theme = useContext(ThemeContext);
     const step_theme = createTheme({
@@ -40,7 +40,7 @@ export function Navigator({activeStep, setActiveStep}){
             <ThemeProvider theme={step_theme}>
                 <Stepper activeStep={activeStep} orientation="vertical">
                     {steps.map((step, index) => (
-                        <Step key={step} onClick={() => setActiveStep(index)}>
+                        <Step key={step}>
                             <Link href={`#${step}`} underline="none" color="inherit">
                                 <StepLabel>{step}</StepLabel>
                             </Link>
@@ -55,5 +55,4 @@ export function Navigator({activeStep, setActiveStep}){
 
 Navigator.defaultProps = {
     activeStep: 0,
-    setActiveStep: () => {}
 }

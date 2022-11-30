@@ -29,7 +29,7 @@ function App() {
             <TabBar/>
             <Grid container style={{paddingTop: 100}}>
                 <Grid item xs={2}>
-                    <Navigator activeStep={activeStep} setActiveStep={setActiveStep}/>
+                    <Navigator activeStep={activeStep}/>
                 </Grid>
                 <Grid item xs={9}>
                     <Stack spacing={6}>
